@@ -650,7 +650,25 @@ a{
   margin-top: 12px;
 }
 
+.round-btn-box{
+  margin-top: 64px;
+  display: none;
+  justify-content: center;
+}
 
+.round-btn{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #efefef;
+}
+.round-btn:not(:last-child){
+  margin-right: 10px;
+}
+.round-btn:nth-child(2){
+  background: #02897a;
+}
 @media screen and (min-width:992px){
   .strategies__list-item{
     border-color: #dedede;
@@ -660,5 +678,8 @@ a{
   }
   .strategies__list-item {
     margin-bottom: 0 !important;
+  }
+  .round-btn-box{
+    display: flex;
   }
 }
