@@ -22,12 +22,14 @@ body {
   --logo-bg:url("../img/logo.svg");
   --text-color:#22343d;
   --btn-color:#173A56;
+  --arrow-bg:url("../img/stories-btn.svg");
 }
 .dark-mode{
   --body-bg:#1f2E35;
   --logo-bg:url("../img/dark-logo.svg");
   --text-color:#fff;
   --btn-color:#fff;
+  --arrow-bg:url("../img/dark-arrow.svg");
 }
 img {
   max-width: 100%;
@@ -1933,5 +1935,215 @@ a{
 @media screen and (max-width:992px){
   .question__item {
     width: 70%;
+  }
+}
+
+
+.resurces-hero {
+  padding-top: 76px;
+  padding-bottom: 126px;
+}
+.resurces__contents-title {
+  width: 75%;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 149%;
+  letter-spacing: -0.03em;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+.resurces__contents-desc {
+  width: 100%;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: -0.03em;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+.resurces__contents-form {
+  padding:8px;
+  width: 90%;
+  border: 1px solid #eaeaea;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+.resurces__contents-input {
+  border: none; 
+  background: none;
+  padding: 10px 10px 10px 20px;
+  color: var(--text-color);
+}
+.resurces__contents-input::placeholder{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: var(--text-color);
+}
+.resurces__contents-btn {
+  cursor: pointer;
+  border-radius: 100px;
+}
+.accounts {
+  position: relative;
+}
+.accounts__btn {
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+}
+.accounts__btn:nth-child(2){
+  transform: translate(-50%,0);
+}
+.accounts__btn:nth-child(3){
+  transform: translate(-100%,0);
+}
+.accounts__desc {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text-color);
+  transform: translate(-30%,0);
+}
+.accounts__desc span{
+  color: #02897a;
+}
+
+@media screen and (max-width:992px){
+  .resurces-hero__row{
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width:576px){
+  .resurces-hero__row{
+    flex-direction: column;
+  }
+  .resurces__contents-title{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .resurces__contents-desc{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 19px;
+  }
+  .resurces__contents-form{
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .resurces__contents-accounts{
+    width: 453px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+  }
+}
+
+
+
+.stories {
+  padding-bottom: 100px;
+}
+.stories__title {
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+.stories__desc {
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+  margin-bottom: 32px;
+}
+.stories__list {
+  margin: 0;
+  padding: 0;
+}
+.about-stories__block {
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  padding-bottom: 40px;
+  
+}
+.about-stories__texts{
+  padding-left: 24px;
+}
+.about-stories__img {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 8px 8px 0 0;
+}
+.stories__item{
+  margin-bottom: 32px;
+}
+.about-stories__desc {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+.about-stories__desc span{
+  font-weight: bold;
+  border-right: 2px solid var(--text-color);
+  padding-right: 10px;
+}
+.about-stories__title {
+  width: 95%;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--text-color);
+}
+.stories__btn{
+  width: 140px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.stories__btn::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: var(--arrow-bg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-left: 8px;
+}
+@media screen and (max-width:576px){
+  .about-stories__title{
+    width: 65%;
   }
 }
