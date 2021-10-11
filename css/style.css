@@ -495,15 +495,7 @@ a{
   margin: 0;
   padding: 0;
 }
-.strategies__list-item {
-  width: 348px;
-  height: 359px;
-  margin: 0 auto;
-  padding: 0 !important;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  background: #fff;
-}
+
 
 .strategies__list-item img{
   width: 370px;
@@ -565,8 +557,8 @@ a{
   background: #02897a;
 }
 @media screen and (min-width:992px){
-  .strategies__list-item{
-    border-color: #dedede;
+  .strategies__list-block{
+    border-color: #dedede !important;
   }
   .strategies__list-item-contents{
     padding-left: 24px;
@@ -618,23 +610,49 @@ a{
 }
 .price__list-item-block:hover{
   cursor: pointer;
-  background: #02897a;
+  background: #02897a !important;
+}
+.price__list--active{
+  cursor: pointer !important;
+  background: #02897a !important;
 }
 .price__list-item-block:hover .table__title{
-  color: #fff;
+  color: #fff !important;
+}
+.price__list--active .table__title{
+  color: #fff !important;
 }
 .price__list-item-block:hover .table__desc{
-  color: #fff;
+  color: #fff !important;
+}
+.price__list--active .table__desc{
+  color: #fff !important;
 }
 .price__list-item-block:hover .table__count{
-  color: #fff;
+  color: #fff  !important;
+}
+.price__list--active .table__count{
+  color: #fff !important;
 }
 .price__list-item-block:hover .table__list-item{
   color: #fff;
 }
+.price__list--active .table__list-item{
+  color: #fff !important;
+}
+.price__list--active .table__list-item{
+  color: #fff !important;
+}
 .price__list-item-block:hover .price__list-btn{
-  background: #fff;
-  color:#02897a;
+  background: #fff !important;
+  color:#02897a !important;
+}
+.price__list--active .price__list-btn{
+  background: #fff !important;
+  color:#02897a !important;
+}
+.price__list--active sub{
+  color: #e0e0e0 !important;
 }
 .price__list-item-block:hover sub{
   color: #e0e0e0;
@@ -2088,12 +2106,22 @@ a{
 .about-stories__texts{
   padding-left: 24px;
 }
+.strategies__list-block{
+  width: 348px;
+  height: 359px;
+  margin: 0 auto;
+  padding: 0 !important;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff; 
+}
 .about-stories__img {
   width: 100%;
   margin-bottom: 24px;
   border-radius: 8px 8px 0 0;
 }
 .stories__item{
+  padding-right: 10px;
   margin-bottom: 32px;
 }
 .about-stories__desc {
